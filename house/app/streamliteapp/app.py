@@ -19,7 +19,7 @@ if st.button("Predict Price"):
 
 
     try:
-        response = requests.post(url, json=data, timeout=5)
+        response = requests.post(url, json=data, timeout=30)
 
         # Agar status code 200 nahi hai to error throw kare
         response.raise_for_status()
