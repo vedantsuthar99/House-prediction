@@ -9,7 +9,7 @@ bathrooms = st.number_input("Bathrooms", min_value=1)
 
 if st.button("Predict Price"):
 
-    url = "http://127.0.0.1:8000/api/predict"
+    url = "https://house-prediction-2xix.onrender.com/api/predict"
 
     data = {
         "sqft_living": sqft,
