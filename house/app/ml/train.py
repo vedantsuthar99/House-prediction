@@ -14,9 +14,10 @@ MODEL_DIR = os.path.join(BASE_DIR, "model")
 os.makedirs(MODEL_DIR, exist_ok=True)
 
 MODEL_PATH = os.path.join(MODEL_DIR, "house_model.pkl")
+DATA_PATH = os.path.join(BASE_DIR, "kc_house_data.csv")  # ✅ FIX
 
 def train_model():
-    df = pd.read_csv("kc_house_data.csv")
+    df = pd.read_csv(DATA_PATH)
 
     features = ["sqft_living", "bedrooms", "bathrooms"]
     target = "price"
