@@ -1,7 +1,7 @@
 from fastapi import APIRouter, UploadFile, File, HTTPException
 import pandas as pd
-from app.schemas.request import HouseInput
-from app.services.predictor import predict_single, predict_bulk
+from .schemas.request import HouseInput
+from .services.predictor import predict_single, predict_bulk
 
 router = APIRouter(prefix="/api")
 

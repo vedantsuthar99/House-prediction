@@ -1,4 +1,4 @@
-from app.ml.model_loader import load_model
+from .ml.model_loader import load_model
 import numpy as np
 import logging
 
