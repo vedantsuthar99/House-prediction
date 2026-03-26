@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from .routes.predict import router
+from house.app.routes.predict import router
 
 app = FastAPI(title="House Price Prediction API", version="1.0")
 app.include_router(router)
